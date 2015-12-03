@@ -6,7 +6,7 @@
 #    By: qle-bevi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/29 23:23:47 by qle-bevi          #+#    #+#              #
-#    Updated: 2015/11/29 23:48:30 by qle-bevi         ###   ########.fr        #
+#    Updated: 2015/12/03 10:52:11 by qle-bevi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,9 +35,9 @@ $(NAME):
 	ar rc $(NAME) $(OBJ)
 
 clean :
-	rm -f $(NAME)
+	rm -f $(OBJ)
 
 fclean : clean
-	rm $(OBJ)
+	rm -f $(NAME)
 
 re: fclean all
