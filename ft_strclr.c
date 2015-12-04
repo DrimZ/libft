@@ -6,7 +6,7 @@
 /*   By: qle-bevi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 23:16:29 by qle-bevi          #+#    #+#             */
-/*   Updated: 2015/11/29 23:16:58 by qle-bevi         ###   ########.fr       */
+/*   Updated: 2015/12/04 12:56:12 by qle-bevi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void	ft_strclr(char *s)
 
 	if (!s)
 		return ;
-
 	len = ft_strlen(s);
 	ft_bzero(s, len);
 }

@@ -6,7 +6,7 @@
 /*   By: qle-bevi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 23:16:30 by qle-bevi          #+#    #+#             */
-/*   Updated: 2015/11/29 23:16:59 by qle-bevi         ###   ########.fr       */
+/*   Updated: 2015/12/04 12:54:15 by qle-bevi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 
 	if (!s || !f)
 		return ;
-
 	i = 0;
 	while (s[i])
 	{

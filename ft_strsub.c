@@ -6,7 +6,7 @@
 /*   By: qle-bevi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 23:16:31 by qle-bevi          #+#    #+#             */
-/*   Updated: 2015/11/29 23:17:00 by qle-bevi         ###   ########.fr       */
+/*   Updated: 2015/12/04 12:55:46 by qle-bevi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-
 	i = 0;
 	str = ft_strnew(len);
 	if (!str)
