@@ -19,6 +19,9 @@ char	**ft_strsplit(char const *s, char c)
 	int		wi;
 	char	**as;
 
+	if (!s)
+		return (NULL);
+
 	as = ft_memalloc(sizeof(as) * (ft_countwords(s, c) + 1));
 	i = 0;
 	len = 0;
