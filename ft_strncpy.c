@@ -20,7 +20,10 @@ char	*ft_strncpy(char *dst, const char *src, size_t n)
 	while (i < n)
 	{
 		if (!src[i])
-			return (ft_memset(dst + i, '\0', n - i));
+		{
+			ft_memset(dst + i, '\0', n - 1);
+			return (dst);
+		}
 		dst[i] = src[i];
 		i++;
 	}

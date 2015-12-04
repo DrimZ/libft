@@ -10,12 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strmap(const char *s, char (*f)(char))
 {
 	int		i;
 	char	*str;
+
+	if (!s || !f)
+		return NULL;
 
 	i = 0;
 	str = ft_strnew(ft_strlen(s));
