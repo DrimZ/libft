@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: qle-bevi <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: qle-bevi <qle-bevi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/29 23:23:47 by qle-bevi          #+#    #+#              #
-#    Updated: 2015/12/03 10:52:11 by qle-bevi         ###   ########.fr        #
+#    Updated: 2015/12/07 02:48:56 by qle-bevi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,9 +24,11 @@ ft_strnequ.c ft_strnew.c ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c \
 ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c ft_getdecade.c ft_lstnew.c \
 ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstpush.c ft_lstmap.c
 
+INCLUDES = includes
+
 OBJ = $(subst .c,.o,$(SRC))
 
-FLAG = -Wall -Wextra -Werror
+FLAG = -Wall -Wextra -Werror -I$(INCLUDES)
 
 all: $(NAME)
 
