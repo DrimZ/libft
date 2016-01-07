@@ -34,9 +34,8 @@ all: $(NAME)
 
 $(NAME):
 	@gcc -c $(SRC) $(FLAG)
-	@echo "\n\tCOMPILATION LIBFT"
 	@ar rc $(NAME) $(OBJ)
-	@echo "\t✅  TERMINEE!"
+	@echo "✅  LIBFT BUILT !"
 
 clean :
 	@rm -f $(OBJ)
