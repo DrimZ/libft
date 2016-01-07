@@ -33,13 +33,15 @@ FLAG = -Wall -Wextra -Werror -I$(INCLUDES)
 all: $(NAME)
 
 $(NAME):
-	gcc -c $(SRC) $(FLAG)
-	ar rc $(NAME) $(OBJ)
+	@gcc -c $(SRC) $(FLAG)
+	@echo "\n\tCOMPILATION LIBFT"
+	@ar rc $(NAME) $(OBJ)
+	@echo "\t✅  TERMINEE!"
 
 clean :
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
 
 fclean : clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
