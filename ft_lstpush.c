@@ -17,12 +17,30 @@ void	ft_lstpush(t_list **begin, void const *content, size_t content_size)
 	t_list *new;
 	t_list *curr;
 
-	if (!begin || !(new = ft_lstnew(content, size)))
-		return (NULL);
+	if (!begin || !(new = ft_lstnew(content, content_size)))
+		return ;
 	if (!*begin)
-		return (*begin = new);
+	{
+		*begin = new;
+		return ;
+	}
 	curr = *begin;
 	while (curr->next)
 		curr = curr->next;
-	return (curr->next = new);
+	curr->next = new;
+}
+
+void	ft_lstpush2(t_list **begin, t_list *new)
+{
+	t_list *curr;
+
+	if (!*begin)
+	{
+		*begin = new;
+		return ;
+	}
+	curr = *begin;
+	while (curr->next)
+		curr = curr->next;
+	curr->next = new;
 }
