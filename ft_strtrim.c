@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qle-bevi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: qle-bevi <qle-bevi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 23:16:31 by qle-bevi          #+#    #+#             */
-/*   Updated: 2015/11/29 23:17:00 by qle-bevi         ###   ########.fr       */
+/*   Updated: 2016/01/13 16:51:33 by qle-bevi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ char	*ft_strtrim(const char *s)
 
 	if (!s)
 		return (NULL);
-
 	len = ft_strlen(s);
 	start = 0;
 	len--;
