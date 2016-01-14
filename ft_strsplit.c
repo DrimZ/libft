@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qle-bevi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: qle-bevi <qle-bevi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 23:16:31 by qle-bevi          #+#    #+#             */
-/*   Updated: 2015/11/29 23:17:00 by qle-bevi         ###   ########.fr       */
+/*   Updated: 2016/01/13 16:51:21 by qle-bevi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ char	**ft_strsplit(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-
 	as = ft_memalloc(sizeof(as) * (ft_countwords(s, c) + 1));
 	i = 0;
 	len = 0;
