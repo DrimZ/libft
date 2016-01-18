@@ -12,6 +12,9 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BOOL char
+# define TRUE 1
+# define FALSE 0
 # include <string.h>
 
 /*
