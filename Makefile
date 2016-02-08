@@ -35,7 +35,7 @@ all: $(NAME)
 $(NAME):
 	@gcc -c $(SRC) $(FLAG)
 	@ar rc $(NAME) $(OBJ)
-	@echo "\n✅  LIBFT BUILT !\n"
+	@echo "\n✅  LIBFT BUILT !"
 
 clean :
 	@rm -f $(OBJ)

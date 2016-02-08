@@ -19,12 +19,11 @@ void	ft_lstpush(t_list **begin, void const *content, size_t content_size)
 
 	if (!begin || !(new = ft_lstnew(content, content_size)))
 		return ;
-	if (!*begin)
+	if (!(curr = *begin))
 	{
 		*begin = new;
 		return ;
 	}
-	curr = *begin;
 	while (curr->next)
 		curr = curr->next;
 	curr->next = new;
