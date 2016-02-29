@@ -22,7 +22,9 @@ ft_strdup.c ft_strequ.c ft_striter.c ft_striteri.c ft_strjoin.c ft_strlen.c \
 ft_strlcat.c ft_strmap.c ft_strmapi.c ft_strncat.c ft_strncmp.c ft_strncpy.c \
 ft_strnequ.c ft_strnew.c ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c \
 ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c ft_getdecade.c ft_lstnew.c \
-ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstpush.c ft_lstmap.c
+ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstpush.c ft_lstmap.c \
+ft_lstsort.c ft_lstsize.c ft_lstrev.c ft_lstselect.c ft_lstgot.c ft_errexit.c \
+ft_lstpop.c
 
 INCLUDES = includes
 

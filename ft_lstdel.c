@@ -15,10 +15,11 @@
 
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	if (!alst || !*alst || !del)
-		return ((void)0);
+	if (!alst || !*alst)
+		return ;
 	if ((*alst)->next)
 		ft_lstdel(&((*alst)->next), del);
-	(*del)(*alst, (*alst)->content_size);
-	*alst = NULL;
+	if (del)
+		(*del)((*alst)->content, (*alst)->content_size);
+	ft_memdel((void **)alst);
 }

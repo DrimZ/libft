@@ -88,6 +88,7 @@ int				ft_toupper(int c);
 /*
 ****  OTHER
 */
+void 			ft_errexit(char *str);
 int				ft_atoi(const char *str);
 int				ft_getdecade(int nb);
 char			*ft_itoa(int n);
@@ -104,9 +105,17 @@ typedef struct	s_list
 t_list			*ft_lstnew(void const *content, size_t content_size);
 void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
-void			ft_lstadd(t_list **alst, t_list *new);
-void			ft_lstpush(t_list **begin, void const *content, size_t size);
-void			ft_lstpush2(t_list **begin, t_list *new);
-void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+t_list		*ft_lstadd(t_list **alst, t_list *new);
+t_list		*ft_lstpop(t_list **alst);
+t_list		*ft_lstpush(t_list **begin, void const *content, size_t size);
+t_list		*ft_lstpush2(t_list **begin, t_list *new);
+int       ft_lstsort(t_list **begin, BOOL (*cmp)(void *a, void *b));
+t_list		*ft_lstrev(t_list **begin);
+int      	ft_lstsize(t_list *list);
+void			ft_lstiter(t_list *list, void (*f)(t_list *elem));
+void			ft_lstiter2(t_list *list, void (*f)(void *elem));
+void			ft_lstiter3(t_list *list, void *ptr, void (*f)(void *ptr, t_list *elem));
+t_list		*ft_lstselect(t_list *list, BOOL (*f)(t_list *elem));
+t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+BOOL			ft_lstgot(t_list *list, t_list *elem);
 #endif

@@ -12,34 +12,27 @@
 
 #include "libft.h"
 
-void	ft_lstpush(t_list **begin, void const *content, size_t content_size)
+t_list	*ft_lstpush(t_list **begin, void const *content, size_t content_size)
 {
 	t_list *new;
 	t_list *curr;
 
 	if (!begin || !(new = ft_lstnew(content, content_size)))
-		return ;
+		return (NULL);
 	if (!(curr = *begin))
-	{
-		*begin = new;
-		return ;
-	}
+		return (*begin = new);
 	while (curr->next)
 		curr = curr->next;
-	curr->next = new;
+	return (curr->next = new);
 }
 
-void	ft_lstpush2(t_list **begin, t_list *new)
+t_list	*ft_lstpush2(t_list **begin, t_list *new)
 {
 	t_list *curr;
 
-	if (!*begin)
-	{
-		*begin = new;
-		return ;
-	}
-	curr = *begin;
+	if (!(curr = *begin))
+		return (*begin = new);
 	while (curr->next)
 		curr = curr->next;
-	curr->next = new;
+	return (curr->next = new);
 }

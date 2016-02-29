@@ -20,3 +20,21 @@ void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 	if (lst->next)
 		ft_lstiter(lst->next, f);
 }
+
+void	ft_lstiter2(t_list *lst, void (*f)(void *elem))
+{
+	if (!lst || !f)
+		return ;
+	(*f)(lst->content);
+	if (lst->next)
+		ft_lstiter2(lst->next, f);
+}
+
+void ft_lstiter3(t_list *lst, void *ptr, void(*f)(void *ptr, t_list *elem))
+{
+	if (!lst || !f)
+		return ;
+	(*f)(ptr, lst);
+	if (lst->next)
+		ft_lstiter3(lst->next, ptr, f);
+}
