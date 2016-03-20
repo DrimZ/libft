@@ -6,7 +6,7 @@
 #    By: qle-bevi <qle-bevi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/29 23:23:47 by qle-bevi          #+#    #+#              #
-#    Updated: 2016/03/18 13:06:18 by qle-bevi         ###   ########.fr        #
+#    Updated: 2016/03/20 17:43:36 by qle-bevi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ ft_strnequ.c ft_strnew.c ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c \
 ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c ft_getdecade.c ft_lstnew.c \
 ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstpush.c ft_lstmap.c \
 ft_lstsort.c ft_lstsize.c ft_lstrev.c ft_lstselect.c ft_lstgot.c ft_errexit.c \
-ft_lstpop.c ft_freetab.c
+ft_lstpop.c ft_freetab.c ft_strsplitif.c
 
 INCLUDES = includes
 
