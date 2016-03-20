@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qle-bevi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: qle-bevi <qle-bevi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 23:16:27 by qle-bevi          #+#    #+#             */
-/*   Updated: 2015/11/29 23:16:56 by qle-bevi         ###   ########.fr       */
+/*   Updated: 2016/03/20 15:56:55 by qle-bevi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	ft_lstiter2(t_list *lst, void (*f)(void *elem))
 		ft_lstiter2(lst->next, f);
 }
 
-void ft_lstiter3(t_list *lst, void *ptr, void(*f)(void *ptr, t_list *elem))
+void	ft_lstiter3(t_list *lst, void *ptr, void (*f)(void *ptr, t_list *elem))
 {
 	if (!lst || !f)
 		return ;
