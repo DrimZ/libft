@@ -6,7 +6,7 @@
 /*   By: qle-bevi <qle-bevi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 23:17:45 by qle-bevi          #+#    #+#             */
-/*   Updated: 2016/03/20 15:56:16 by qle-bevi         ###   ########.fr       */
+/*   Updated: 2016/03/20 17:39:47 by qle-bevi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,7 @@ char			*ft_strstr(const char *s1, const char *s2);
 int				ft_countwords(const char *s1, char c);
 char			*ft_strsub(char const *s, unsigned int start, size_t len);
 char			**ft_strsplit(char const *s, char c);
+char			**ft_strsplitif(char const *s, BOOL (*f)(char));
 char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(const char *s);
 /*
