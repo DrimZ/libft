@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qle-bevi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: qle-bevi <qle-bevi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 23:17:45 by qle-bevi          #+#    #+#             */
-/*   Updated: 2016/01/18 16:01:28 by qle-bevi         ###   ########.fr       */
+/*   Updated: 2016/03/18 13:00:29 by qle-bevi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,8 @@ int				ft_toupper(int c);
 /*
 ****  OTHER
 */
-void 			ft_errexit(char *str);
+void			ft_errexit(char *str);
+void			ft_freetab(void **tab);
 int				ft_atoi(const char *str);
 int				ft_getdecade(int nb);
 char			*ft_itoa(int n);
