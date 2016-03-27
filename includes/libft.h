@@ -6,7 +6,7 @@
 /*   By: qle-bevi <qle-bevi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 23:17:45 by qle-bevi          #+#    #+#             */
-/*   Updated: 2016/03/20 17:39:47 by qle-bevi         ###   ########.fr       */
+/*   Updated: 2016/03/21 18:55:14 by qle-bevi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,8 +89,8 @@ int				ft_toupper(int c);
 /*
 ****  OTHER
 */
-void			ft_errexit(char *str);
-void			ft_freetab(void **tab);
+void			ft_errexit(int code, char *str);
+void			ft_freetab(void **arr);
 int				ft_atoi(const char *str);
 int				ft_getdecade(int nb);
 char			*ft_itoa(int n);
