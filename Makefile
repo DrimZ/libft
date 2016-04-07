@@ -6,7 +6,7 @@
 #    By: qle-bevi <qle-bevi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/29 23:23:47 by qle-bevi          #+#    #+#              #
-#    Updated: 2016/03/20 17:43:36 by qle-bevi         ###   ########.fr        #
+#    Updated: 2016/04/06 12:23:39 by qle-bevi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ all: $(NAME)
 $(NAME):
 	@gcc -c $(SRC) $(FLAG)
 	@ar rc $(NAME) $(OBJ)
-	@echo "\n✅  LIBFT BUILT !"
+	@echo "\n✅  LIBFT BUILT !\n"
 
 clean :
 	@rm -f $(OBJ)
