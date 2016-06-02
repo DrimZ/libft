@@ -32,12 +32,17 @@ OBJ = $(subst .c,.o,$(SRC))
 
 FLAG = -Wall -Wextra -Werror -I$(INCLUDES)
 
-all: $(NAME)
+all: title $(NAME)
+
+title:
+	@echo "Making $(NAME)"
 
 $(NAME):
 	@gcc -c $(SRC) $(FLAG)
 	@ar rc $(NAME) $(OBJ)
-	@echo "\n✅  LIBFT BUILT !\n"
+	@echo "Indexing...\n"
+	@ranlib $(NAME)
+	@echo "✅  LIBFT BUILT !\n"
 
 clean :
 	@rm -f $(OBJ)
@@ -46,3 +51,5 @@ fclean : clean
 	@rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all title clean fclean re
